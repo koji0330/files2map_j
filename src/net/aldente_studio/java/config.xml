@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file2map>
+    <column_order>
+        <column>uri</column>
+        <column>title</column>
+        <column>bread_crumbs</column>
+    </column_order>
+    <parts>
+        <part name="uri">
+            <type>path</type>
+            <replaces>
+                <replace>
+                    <before>.*docs.python.org</before>
+                    <after></after>
+                </replace>
+                <replace>
+                    <before>//</before>
+                    <after>/</after>
+                </replace>
+            </replaces>
+        </part>
+        <part name="title">
+            <type>xpath</type>
+            <value>//title/text()</value>
+        </part>
+    </parts>
+</file2map>
